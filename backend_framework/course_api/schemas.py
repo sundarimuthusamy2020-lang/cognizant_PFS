@@ -1,6 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
-
+from typing import List, Optional
 
 # COURSE
 
@@ -64,3 +63,18 @@ class EnrollmentResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+class CourseReplace(BaseModel):
+    name: str
+    code: str
+    credits: int
+    department_id: int
+
+class ErrorResponse(BaseModel):
+    error: dict
+
+class CourseListResponse(BaseModel):
+    count: int
+    next: Optional[str]
+    previous: Optional[str]
+    results: List[CourseResponse]
