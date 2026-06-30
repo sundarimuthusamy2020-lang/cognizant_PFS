@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Portal</h1>
+</header>
+
+<main>
+
+    <section id="hero">
+        <h2>Welcome to the Student Portal</h2>
+        <p>Explore available courses.</p>
+    </section>
+
+    <section id="courses">
+
+        <!-- Task 40 -->
+        <input
+            type="text"
+            id="search-courses"
+            placeholder="Search courses..."
+        >
+
+        <!-- Task 42 -->
+        <button id="sort-btn">
+            Sort by Credits
+        </button>
+
+        <!-- Task 35 -->
+        <div class="course-grid">
+
+        </div>
+
+        <!-- Task 39 -->
+        <p id="total-credits"></p>
+
+        <!-- Task 43 -->
+        <div id="selected-course"></div>
+
+    </section>
+
+</main>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
