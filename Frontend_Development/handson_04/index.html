@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Async JavaScript</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <h2>Available Courses</h2>
+            <p>Course data is loaded asynchronously.</p>
+        </section>
+
+        <!-- Loading Message (Task 48) -->
+        <p id="loading-message">
+            Loading courses...
+        </p>
+
+        <!-- Course Grid -->
+        <section id="courses">
+
+            <div class="course-grid">
+
+            </div>
+
+            <p id="total-credits"></p>
+
+        </section>
+
+        <!-- Notifications Section (Task 51) -->
+
+        <section id="notifications">
+
+            <h2>Notifications</h2>
+
+            <!-- Spinner (Task 52) -->
+            <div id="spinner" class="hidden"></div>
+
+            <!-- Error Message (Task 53) -->
+            <p id="error-message"></p>
+
+            <!-- Retry Button (Task 54) -->
+            <button id="retry-btn" class="hidden">
+                Retry
+            </button>
+
+            <!-- Notification Cards -->
+            <div id="notification-list">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Axios CDN (Task 55) -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- ES6 Module -->
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
