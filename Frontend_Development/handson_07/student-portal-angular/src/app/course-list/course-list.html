@@ -1,0 +1,46 @@
+<div class="container">
+
+<h1 style="text-align:center;color:white;margin-bottom:25px;">
+Student Course Portal
+</h1>
+
+<div *ngIf="loading" class="loading">
+Loading Courses...
+</div>
+
+<div *ngIf="!loading">
+
+<input
+type="text"
+placeholder="🔍 Search Course..."
+[(ngModel)]="searchTerm">
+
+<div class="course-grid">
+
+<app-course-card
+
+*ngFor="let course of filteredCourses"
+
+[name]="course.name"
+
+[code]="course.code"
+
+[credits]="course.credits"
+
+[grade]="course.grade">
+
+</app-course-card>
+
+</div>
+
+<h2
+style="text-align:center;color:white"
+*ngIf="filteredCourses.length==0">
+
+No Courses Found
+
+</h2>
+
+</div>
+
+</div>

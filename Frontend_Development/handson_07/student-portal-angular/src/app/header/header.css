@@ -1,0 +1,23 @@
+nav{
+    background:white;
+    padding:18px 30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2196F3;
+}
