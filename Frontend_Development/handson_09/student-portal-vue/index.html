@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+  Hands-On 9 Accessibility Audit
+
+  Initial Lighthouse Accessibility Score: 90
+
+  Issues Fixed:
+  ✔ Added labels to form fields
+  ✔ Added aria-label to navigation
+  ✔ Improved heading hierarchy
+  ✔ Keyboard accessible cards
+  ✔ Added live region for search results
+  ✔ Improved colour contrast
+
+  Cross Browser Testing
+  Chrome ✓
+  Firefox ✓
+  Edge ✓
+
+  CSS Feature Checked:
+  CSS Grid
+  https://caniuse.com/css-grid
+  Supported by all modern browsers.
+  -->
+
+  <title>Student Portal</title>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+  <!-- CSS Variables Ponyfill -->
+  <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+
+  <script>
+    cssVars();
+  </script>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
